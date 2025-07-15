@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansh's Projects</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #0F172A;
+            color: #fff;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px 10%;
+            background: #09091b;
+        }
+
+        nav .left {
+            font-size: 1.8rem;
+            font-weight: 700;
+            color: #8B5CF6;
+        }
+
+        nav .right ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav .right ul li a {
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        nav .right ul li a:hover {
+            color: #8B5CF6;
+        }
+
+        .container {
+            padding: 60px 10%;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #8B5CF6;
+            font-size: 2.2rem;
+        }
+
+        .project-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .project-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 20px;
+            border-radius: 15px;
+            text-align: center;
+            transition: 0.3s;
+        }
+
+        .project-card:hover {
+            background: rgba(255, 255, 255, 0.08);
+            transform: translateY(-5px);
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .project-card h3 {
+            color: #8B5CF6;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            color: #ccc;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            background: #8B5CF6;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 30px;
+            text-decoration: none;
+            transition: 0.3s;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background: #7C3AED;
+        }
+
+        .disabled {
+            background: grey;
+            cursor: not-allowed;
+            pointer-events: none;
+            opacity: 0.6;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 50px;
+            color: #999;
+            background: #09091b;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav>
+        <div class="left">Ansh Portfolio</div>
+        <div class="right">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#projects">Projects</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container" id="projects">
+        <h2>My Projects</h2>
+        <div class="project-container">
+
+            <div class="project-card" data-aos="fade-up">
+                <img src="imagess/project1.png" alt="College Dekhoo">
+                <h3>College Dekhoo</h3>
+                <p>Admission platform helping 700+ students find the right college.</p>
+                <a href="https://collegedekhoo.netlify.app/" target="_blank" class="btn">Visit College Dekhoo</a>
+            </div>
+
+            <div class="project-card" data-aos="fade-up">
+                <img src="imagess/project2.png" alt="Bank App">
+                <h3>Bank App</h3>
+                <p>A secure web-based banking application built with Node.js.</p>
+                <a href="#" class="btn disabled">Private Project</a>
+            </div>
+
+            <div class="project-card" data-aos="fade-up">
+                <img src="imagess/portfolio.png" alt="Portfolio">
+                <h3>Portfolio Website</h3>
+                <p>Personal portfolio showcasing my projects and skills.</p>
+                <a href="https://anshdhama.netlify.app/" target="_blank" class="btn">Visit Portfolio</a>
+            </div>
+
+            <div class="project-card" data-aos="fade-up">
+                <img src="imagess/todo.png" alt="To-Do List">
+                <h3>To-Do List App</h3>
+                <p>A simple to-do list built using JavaScript and LocalStorage.</p>
+                <a href="https://anshtodolist.netlify.app/" target="_blank" class="btn">Visit To-Do List</a>
+            </div>
+
+            <div class="project-card" data-aos="fade-up">
+                <img src="imagess/calculator.png" alt="Calculator">
+                <h3>Calculator</h3>
+                <p>A fully functional calculator built with HTML, CSS, JS.</p>
+                <a href="https://calculatesme.netlify.app/" target="_blank" class="btn">Visit Calculator</a>
+            </div>
+
+            <div class="project-card" data-aos="fade-up">
+                <img src="imagess/weather.png" alt="Weather App">
+                <h3>Weather App</h3>
+                <p>Real-time weather updates with temperature, humidity, and dynamic UI.</p>
+                <a href="https://weatherschek.netlify.app/" target="_blank" class="btn">Visit Weather App</a>
+            </div>
+
+            <div class="project-card" data-aos="fade-up">
+                <img src="imagess/blog.png" alt="Blogs UI">
+                <h3>Blogs Website UI</h3>
+                <p>Responsive blog UI with categories and search.</p>
+                <a href="#" class="btn disabled">Coming Soon</a>
+            </div>
+
+            <div class="project-card" data-aos="fade-up">
+                <img src="imagess/ecommerce.png" alt="E-commerce UI">
+                <h3>E-commerce Landing Page</h3>
+                <p>Modern landing page with product highlights and animations.</p>
+                <a href="#" class="btn disabled">Coming Soon</a>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Ansh Dhama | <a href="https://github.com/Ansh-dhama">GitHub</a> | <a href="https://linkedin.com/in/ansh-dhama-6ab72b346">LinkedIn</a></p>
+    </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({ duration: 1000 });
+    </script>
+
+</body>
+
+</html>

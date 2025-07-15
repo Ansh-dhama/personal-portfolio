@@ -1,6 +1,9 @@
 # Personal Portfolio ✨
 
-This is my personal portfolio website showcasing my projects, skills, and contact information.
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=Ansh-dhama.personal-portfolio)
+
+This is my personal portfolio website...
+
 
 ## 🚀 Features
 

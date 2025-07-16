@@ -9,133 +9,192 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="style.css">
-    <meta name="description" content="Ansh Dhama | Web Developer Portfolio">
-<meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Developer, NIET">
-
-</head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="description" content="Ansh Dhama | Web Developer Portfolio, building modern web applications, skilled in React, Data Structures & Algorithms, Java.">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Portfolio, Developer, NIET, Ansh Dhama, Web Developer, React, Frontend, DSA, Java">
+    <link rel="icon" href="image/favicon.png" type="image/png"> </head>
 
 <body>
 
- <header class="navbar">
-    <div class="logo">
-        <span class="highlight">Ansh</span>Dhama
-    </div>
-  <input type="checkbox" id="menu-toggle">
-<label for="menu-toggle" class="hamburger">☰</label>
+    <header class="navbar">
+        <div class="logo">
+            <span class="highlight">Ansh</span>Dhama
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">☰</label>
 
-<nav class="nav-links">
-    <ul>
+        <nav class="nav-links">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button id="themeToggle">🌓</button>
+    </header>
 
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="projects.html">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    <button id="themeToggle">🌓</button>
-</header>
+    <main>
+        <section class="hero container" data-aos="fade-up">
+            <div class="left">
+                <h1>Hey, I'm <span class="highlight">Ansh Dhama</span></h1>
+                <p>Crafting digital experiences & solving real-world problems through code.</p>
+                <div class="buttons">
+                    <a href="image/Ansh Intern Resume.pdf" download class="btn">📄 Resume</a>
+                    <a href="https://github.com/Ansh-dhama" target="_blank" class="btn">🚀 GitHub</a>
+                </div>
+            </div>
+            <div class="right">
+                <img src="image/anshdhama.png" alt="An illustration of a web developer working at a computer">
+            </div>
+        </section>
 
+        <section id="about" class="about container" data-aos="fade-up">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="image/anshdhama.png" alt="Ansh Dhama, a web developer and problem solver" class="about-img">
+                <div class="about-text">
+                    <p>I'm <span class="highlight">Ansh Dhama</span>, a passionate **Web Developer** and **Problem Solver** pursuing B.Tech at NIET. I specialize in:</p>
+                    <ul>
+                        <li>⚡ Front-end Development</li>
+                        <li>⚙️ Data Structures & Algorithms</li>
+                        <li>🌐 Full-Stack Technologies</li>
+                    </ul>
+                    <p>Always eager to learn, collaborate, and build meaningful tech solutions.</p>
+                </div>
+            </div>
+        </section>
 
-    <section class="hero container" data-aos="fade-up">
-        <div class="left">
-            <h1>Hey, I'm <span class="highlight">Ansh Dhama</span></h1>
-            <p>Crafting digital experiences & solving real-world problems through code.</p>
-            <div class="buttons">
-                <a href="image/Ansh Intern Resume.pdf" download class="btn">📄 Resume</a>
-                <a href="https://github.com/Ansh-dhama" target="_blank" class="btn">🚀 GitHub</a>
+        <section id="experience" class="experience container" data-aos="fade-up">
+            <h2>My Experience & Focus</h2>
+            <div class="exp-container">
+
+                <div class="exp-card">
+                    <img src="https://img.icons8.com/color/48/react-native.png" alt="React Native icon">
+                    <h3>Frontend Developer (React/Tailwind)</h3>
+                    <p>Building responsive web apps with **React.js** and **Tailwind CSS**. Focus on real-world projects & clean UI/UX.</p>
+                </div>
+
+                <div class="exp-card">
+                    <img src="https://img.icons8.com/color/48/data-configuration.png" alt="Data Structure and Algorithms icon">
+                    <h3>DSA & Java Developer</h3>
+                    <p>Daily problem solving on **LeetCode** and **CodeForces**. Practicing core **Java DSA** concepts & algorithms.</p>
+                </div>
+
+                <div class="exp-card">
+                    <img src="https://img.icons8.com/color/48/server.png" alt="Server icon representing Operating Systems">
+                    <h3>Operating Systems Learner</h3>
+                    <p>Deep-diving into **Operating Systems** with Neso Academy & Love Babbar, focusing on concepts & system-level knowledge.</p>
+                </div>
+
+                <div class="exp-card">
+                    <img src="https://img.icons8.com/color/48/business-network.png" alt="Business network icon">
+                    <h3>College Dekhoo Project</h3>
+                    <p>Managing **College Dekhoo** website: handling admissions leads, marketing campaigns & web development.</p>
+                </div>
+
+                <div class="exp-card">
+                    <img src="https://img.icons8.com/color/48/project.png" alt="Project icon representing freelancing">
+                    <h3>Freelancing & Internship Preparation</h3>
+                    <p>Exploring **freelancing projects**, refining portfolio, applying for internships & building new connections.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="contact" class="contact container" data-aos="fade-up">
+            <h2>Get In Touch</h2>
+            <p class="contact-desc">Have a project idea, a question, or just want to connect? Feel free to drop a message!</p>
+            <form action="mailto:Dhamaansh19@gmail.com" method="POST" enctype="text/plain">
+                <input type="text" name="name" placeholder="👤 Your Name" required>
+                <input type="email" name="email" placeholder="✉️ Your Email" required>
+                <textarea name="message" placeholder="💬 Your Message" required></textarea>
+                <button type="submit">Send Message 🚀</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; <span id="currentYear"></span> <span class="highlight">Ansh Dhama</span></p>
+            <div class="footer-links">
+                <a href="https://github.com/Ansh-dhama" target="_blank">GitHub</a>
+                <a href="https://linkedin.com/in/ansh-dhama-6ab72b346" target="_blank">LinkedIn</a>
             </div>
         </div>
-        <div class="right">
-            <img src="image/anshdhama.png" alt="Developer Image">
-        </div>
-    </section>
-
-  <section id="about" class="about container" data-aos="fade-up">
-    <h2>About Me</h2>
-    <div class="about-content">
-        <img src="image/anshdhama.png" alt="Ansh Dhama" class="about-img">
-        <div class="about-text">
-            <p>I'm <span class="highlight">Ansh Dhama</span>, a passionate <b>Web Developer</b> and <b>Problem Solver</b> pursuing B.Tech at NIET. I specialize in:</p>
-            <ul>
-                <li>⚡ Front-end Development</li>
-                <li>⚙️ Data Structures & Algorithms</li>
-                <li>🌐 Full-Stack Technologies</li>
-            </ul>
-            <p>Always eager to learn, collaborate, and build meaningful tech solutions.</p>
-        </div>
-    </div>
-</section>
-
-   <section id="experience" class="experience container" data-aos="fade-up">
-    <h2>My Recent Activities</h2>
-    <div class="exp-container">
-
-        <div class="exp-card">
-            <img src="https://img.icons8.com/color/48/react-native.png" alt="Frontend Icon">
-            <h3>Frontend Developer (React/Tailwind)</h3>
-            <p>Building responsive web apps with <b>React.js</b> and <b>Tailwind CSS</b>. Focus on real-world projects & clean UI/UX.</p>
-        </div>
-
-        <div class="exp-card">
-            <img src="https://img.icons8.com/color/48/data-configuration.png" alt="DSA Icon">
-            <h3>DSA & Java Developer</h3>
-            <p>Daily problem solving on <b>LeetCode</b> and <b>CodeForces</b>. Practicing core <b>Java DSA</b> concepts & algorithms.</p>
-        </div>
-
-        <div class="exp-card">
-            <img src="https://img.icons8.com/color/48/server.png" alt="OS Icon">
-            <h3>Operating Systems Learner</h3>
-            <p>Deep-diving into <b>Operating Systems</b> with Neso Academy & Love Babbar, focusing on concepts & system-level knowledge.</p>
-        </div>
-
-        <div class="exp-card">
-            <img src="https://img.icons8.com/color/48/business-network.png" alt="College Dekhoo">
-            <h3>College Dekhoo Project</h3>
-            <p>Managing <b>College Dekhoo</b> website: handling admissions leads, marketing campaigns & web development.</p>
-        </div>
-
-        <div class="exp-card">
-            <img src="https://img.icons8.com/color/48/project.png" alt="Freelancing Icon">
-            <h3>Freelancing & Internship Preparation</h3>
-            <p>Exploring <b>freelancing projects</b>, refining portfolio, applying for internships & building new connections.</p>
-        </div>
-
-    </div>
-</section>
-
-
-
-   <section id="contact" class="contact container" data-aos="fade-up">
-    <h2>Get In Touch</h2>
-    <p class="contact-desc">Have a project idea, a question, or just want to connect? Feel free to drop a message!</p>
-    <form action="mailto:Dhamaansh19@gmail.com" method="POST" enctype="text/plain">
-        <input type="text" name="name" placeholder="👤 Your Name" required>
-        <input type="email" name="email" placeholder="✉️ Your Email" required>
-        <textarea name="message" placeholder="💬 Your Message" required></textarea>
-        <button type="submit">Send Message 🚀</button>
-    </form>
-</section>
-
-
-   <footer>
-    <div class="footer-content">
-        <p>&copy; 2025 <span class="highlight">Ansh Dhama</span></p>
-        <div class="footer-links">
-            <a href="https://github.com/Ansh-dhama" target="_blank">GitHub</a>
-            <a href="https://linkedin.com/in/ansh-dhama-6ab72b346" target="_blank">LinkedIn</a>
-        </div>
-    </div>
-</footer>
+    </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init();
-        document.getElementById('themeToggle').onclick = () => {
-            document.body.classList.toggle('light-theme');
-        };
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('themeToggle');
+            const menuToggle = document.getElementById('menu-toggle');
+            const navLinks = document.querySelectorAll('.nav-links ul li a');
+            const body = document.body;
+
+            // Theme persistence
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                body.classList.add(savedTheme);
+                // Update button icon based on saved theme
+                themeToggle.innerHTML = savedTheme === 'light-theme' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+            } else {
+                // Default to moon icon if no theme saved (dark theme)
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+
+            themeToggle.onclick = () => {
+                body.classList.toggle('light-theme');
+                if (body.classList.contains('light-theme')) {
+                    localStorage.setItem('theme', 'light-theme');
+                    themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                } else {
+                    localStorage.removeItem('theme'); // Removes 'theme' from localStorage if reverting to dark
+                    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                }
+            };
+
+            // Smooth scrolling for internal links and close mobile menu
+            navLinks.forEach(anchor => {
+                anchor.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (href.startsWith('index.html#') || href === 'index.html#') {
+                        e.preventDefault();
+                        const targetId = href.split('#')[1] || ''; // Get the ID after '#'
+                        const targetElement = targetId ? document.getElementById(targetId) : document.querySelector('body');
+                        
+                        if (targetElement) {
+                            targetElement.scrollIntoView({
+                                behavior: 'smooth'
+                            });
+                        }
+                        // Close the mobile menu after clicking a link
+                        if (menuToggle.checked) {
+                            menuToggle.checked = false;
+                        }
+                    } else if (href === '#') { // For the "Home" link pointing to "#" on the current page
+                        e.preventDefault();
+                        window.scrollTo({
+                            top: 0,
+                            behavior: 'smooth'
+                        });
+                        if (menuToggle.checked) {
+                            menuToggle.checked = false;
+                        }
+                    }
+                });
+            });
+
+            // Set current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
     </script>
 
 </body>
-
 </html>

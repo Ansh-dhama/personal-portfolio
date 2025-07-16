@@ -4,210 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ansh's Projects</title>
+    <title>Ansh Dhama | Portfolio Projects</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Poppins', sans-serif;
-        }
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css"> <meta name="description" content="Explore Ansh Dhama's web development projects, including College Dekhoo, Bank App, Portfolio Website, and more.">
+    <meta name="keywords" content="Portfolio, Projects, Web Development, HTML, CSS, JavaScript, React, Node.js, College Dekhoo, Bank App, To-Do List, Calculator, Weather App, Blog UI, E-commerce UI">
+    <link rel="icon" href="image/favicon.png" type="image/png">
 
-        body {
-            background: #0F172A;
-            color: #fff;
-        }
-
-        nav {
-            display: flex;
-            justify-content: space-between;
-            padding: 20px 10%;
-            background: #09091b;
-        }
-
-        nav .left {
-            font-size: 1.8rem;
-            font-weight: 700;
-            color: #8B5CF6;
-        }
-
-        nav .right ul {
-            list-style: none;
-            display: flex;
-            gap: 20px;
-        }
-
-        nav .right ul li a {
-            text-decoration: none;
-            color: white;
-            transition: 0.3s;
-        }
-
-        nav .right ul li a:hover {
-            color: #8B5CF6;
-        }
-
-        .container {
-            padding: 60px 10%;
-        }
-
-        h2 {
-            text-align: center;
-            margin-bottom: 40px;
-            color: #8B5CF6;
-            font-size: 2.2rem;
-        }
-
-        .project-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 25px;
-        }
-
-        .project-card {
-            background: rgba(255, 255, 255, 0.05);
-            padding: 20px;
-            border-radius: 15px;
-            text-align: center;
-            transition: 0.3s;
-        }
-
-        .project-card:hover {
-            background: rgba(255, 255, 255, 0.08);
-            transform: translateY(-5px);
-        }
-
-        .project-card img {
-            width: 100%;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        .project-card h3 {
-            color: #8B5CF6;
-            margin-bottom: 10px;
-        }
-
-        .project-card p {
-            color: #ccc;
-            margin-bottom: 15px;
-        }
-
-        .btn {
-            background: #8B5CF6;
-            color: white;
-            padding: 10px 20px;
-            border-radius: 30px;
-            text-decoration: none;
-            transition: 0.3s;
-            display: inline-block;
-        }
-
-        .btn:hover {
-            background: #7C3AED;
-        }
-
-        .disabled {
-            background: grey;
-            cursor: not-allowed;
-            pointer-events: none;
-            opacity: 0.6;
-        }
-
-        footer {
-            text-align: center;
-            padding: 20px;
-            margin-top: 50px;
-            color: #999;
-            background: #09091b;
-        }
-    </style>
 </head>
 
 <body>
 
-    <nav>
-        <div class="left">Ansh Portfolio</div>
-        <div class="right">
-            <ul>
+    <header class="navbar"> <div class="logo"> <span class="highlight">Ansh</span>Dhama
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">☰</label>
+
+        <nav class="nav-links"> <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#projects">Projects</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#experience">Experience</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li> <li><a href="index.html#contact">Contact</a></li>
             </ul>
+        </nav>
+        <button id="themeToggle">🌓</button> </header>
+
+    <main>
+        <div class="container" id="projects">
+            <h2>My Projects</h2>
+            <div class="project-container">
+
+                <div class="project-card" data-aos="fade-up">
+                    <img src="image/collegedekhoo.png" alt="Screenshot of College Dekhoo admission platform">
+                    <h3>College Dekhoo</h3>
+                    <p>An admission platform designed to help over 700 students find their ideal college. Features a user-friendly interface and robust search capabilities.</p>
+                    <div class="project-actions">
+                        <a href="https://collegedekhoo.netlify.app/" target="_blank" class="btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <img src="image/bankapp.png" alt="Screenshot of a secure Bank App login page">
+                    <h3>Bank App</h3>
+                    <p>A secure web-based banking application, developed with Node.js. It includes features like user authentication, transaction management, and account summaries.</p>
+                    <div class="project-actions">
+                        <a href="#" class="btn disabled">Private Project</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <img src="image/portfolioo.png" alt="Screenshot of Ansh Dhama's personal portfolio website">
+                    <h3>Portfolio Website</h3>
+                    <p>This very site! A personal portfolio showcasing my development projects, skills, and professional journey. Built with HTML, CSS, and JavaScript.</p>
+                    <div class="project-actions">
+                        <a href="https://anshdhama.netlify.app/" target="_blank" class="btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                    <img src="image/todolists.png" alt="Screenshot of a simple To-Do List App">
+                    <h3>To-Do List App</h3>
+                    <p>A practical and intuitive to-do list application, utilizing JavaScript for dynamic functionality and LocalStorage for persistent data storage across sessions.</p>
+                    <div class="project-actions">
+                        <a href="https://anshtodolist.netlify.app/" target="_blank" class="btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <img src="image/calculator.png" alt="Screenshot of a web-based Calculator app">
+                    <h3>Calculator</h3>
+                    <p>A fully functional web-based calculator offering basic arithmetic operations, crafted with a clean UI using HTML, CSS, and dynamic JavaScript logic.</p>
+                    <div class="project-actions">
+                        <a href="https://calculatesme.netlify.app/" target="_blank" class="btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="500">
+                    <img src="image/weatherapp.png" alt="Screenshot of a Weather App displaying current conditions">
+                    <h3>Weather App</h3>
+                    <p>Provides real-time weather updates including temperature, humidity, and atmospheric conditions, featuring a dynamic user interface that changes based on weather data.</p>
+                    <div class="project-actions">
+                        <a href="https://weatherschek.netlify.app/" target="_blank" class="btn">View Live <i class="fas fa-external-link-alt"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <img src="imagess/blog.png" alt="Screenshot of a Blogs Website User Interface">
+                    <h3>Blogs Website UI</h3>
+                    <p>A sleek and responsive user interface for a blog website, incorporating categories, a search function, and an intuitive layout for optimal content discovery.</p>
+                    <div class="project-actions">
+                        <a href="#" class="btn disabled">Coming Soon</a>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="700">
+                    <img src="imagess/ecommerce.png" alt="Screenshot of an E-commerce Landing Page">
+                    <h3>E-commerce Landing Page</h3>
+                    <p>A modern and visually appealing landing page for an e-commerce platform, highlighting key products and featuring subtle animations for enhanced user engagement.</p>
+                    <div class="project-actions">
+                        <a href="#" class="btn disabled">Coming Soon</a>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </nav>
-
-    <div class="container" id="projects">
-        <h2>My Projects</h2>
-        <div class="project-container">
-
-            <div class="project-card" data-aos="fade-up">
-                <img src="imagess/project1.png" alt="College Dekhoo">
-                <h3>College Dekhoo</h3>
-                <p>Admission platform helping 700+ students find the right college.</p>
-                <a href="https://collegedekhoo.netlify.app/" target="_blank" class="btn">Visit College Dekhoo</a>
-            </div>
-
-            <div class="project-card" data-aos="fade-up">
-                <img src="imagess/project2.png" alt="Bank App">
-                <h3>Bank App</h3>
-                <p>A secure web-based banking application built with Node.js.</p>
-                <a href="#" class="btn disabled">Private Project</a>
-            </div>
-
-            <div class="project-card" data-aos="fade-up">
-                <img src="imagess/portfolio.png" alt="Portfolio">
-                <h3>Portfolio Website</h3>
-                <p>Personal portfolio showcasing my projects and skills.</p>
-                <a href="https://anshdhama.netlify.app/" target="_blank" class="btn">Visit Portfolio</a>
-            </div>
-
-            <div class="project-card" data-aos="fade-up">
-                <img src="imagess/todo.png" alt="To-Do List">
-                <h3>To-Do List App</h3>
-                <p>A simple to-do list built using JavaScript and LocalStorage.</p>
-                <a href="https://anshtodolist.netlify.app/" target="_blank" class="btn">Visit To-Do List</a>
-            </div>
-
-            <div class="project-card" data-aos="fade-up">
-                <img src="imagess/calculator.png" alt="Calculator">
-                <h3>Calculator</h3>
-                <p>A fully functional calculator built with HTML, CSS, JS.</p>
-                <a href="https://calculatesme.netlify.app/" target="_blank" class="btn">Visit Calculator</a>
-            </div>
-
-            <div class="project-card" data-aos="fade-up">
-                <img src="imagess/weather.png" alt="Weather App">
-                <h3>Weather App</h3>
-                <p>Real-time weather updates with temperature, humidity, and dynamic UI.</p>
-                <a href="https://weatherschek.netlify.app/" target="_blank" class="btn">Visit Weather App</a>
-            </div>
-
-            <div class="project-card" data-aos="fade-up">
-                <img src="imagess/blog.png" alt="Blogs UI">
-                <h3>Blogs Website UI</h3>
-                <p>Responsive blog UI with categories and search.</p>
-                <a href="#" class="btn disabled">Coming Soon</a>
-            </div>
-
-            <div class="project-card" data-aos="fade-up">
-                <img src="imagess/ecommerce.png" alt="E-commerce UI">
-                <h3>E-commerce Landing Page</h3>
-                <p>Modern landing page with product highlights and animations.</p>
-                <a href="#" class="btn disabled">Coming Soon</a>
-            </div>
-
-        </div>
-    </div>
+    </main>
 
     <footer>
-        <p>&copy; 2025 Ansh Dhama | <a href="https://github.com/Ansh-dhama">GitHub</a> | <a href="https://linkedin.com/in/ansh-dhama-6ab72b346">LinkedIn</a></p>
+        <p>&copy; <span id="currentYear"></span> Ansh Dhama. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="https://github.com/Ansh-dhama" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://linkedin.com/in/ansh-dhama-6ab72b346" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        </div>
     </footer>
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
-        AOS.init({ duration: 1000 });
+        AOS.init({
+            duration: 1000,
+            once: true,
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const themeToggle = document.getElementById('themeToggle');
+            const menuToggle = document.getElementById('menu-toggle');
+            const navLinks = document.querySelectorAll('.nav-links ul li a');
+            const body = document.body;
+
+            // Theme persistence
+            const savedTheme = localStorage.getItem('theme');
+            if (savedTheme) {
+                body.classList.add(savedTheme);
+                // Update button icon based on saved theme
+                themeToggle.innerHTML = savedTheme === 'light-theme' ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+            } else {
+                // Default to moon icon if no theme saved (dark theme)
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            }
+
+            themeToggle.onclick = () => {
+                body.classList.toggle('light-theme');
+                if (body.classList.contains('light-theme')) {
+                    localStorage.setItem('theme', 'light-theme');
+                    themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+                } else {
+                    localStorage.removeItem('theme'); // Removes 'theme' from localStorage if reverting to dark
+                    themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+                }
+            };
+
+            // Close mobile menu when a link is clicked
+            navLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    if (menuToggle.checked) {
+                        menuToggle.checked = false; // Uncheck the checkbox to close menu
+                    }
+                });
+            });
+
+            // Set current year in footer
+            document.getElementById('currentYear').textContent = new Date().getFullYear();
+        });
     </script>
 
 </body>
